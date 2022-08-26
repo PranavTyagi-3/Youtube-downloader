@@ -5,5 +5,7 @@ Currently the program is not able to tell the user that the file is being downlo
 
 # How to Use
 1.After downloading the repository, open the command prompt and navigate to the repository folder.
-2.Type: '''\env\Scripts\Activate'''
-3.Enter: '''flask run'''
+
+2.Type: ``` \env\Scripts\Activate ```
+
+3.Enter: ``` flask run ```

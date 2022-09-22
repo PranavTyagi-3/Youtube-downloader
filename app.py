@@ -9,11 +9,11 @@ app=Flask(__name__)
 def index():
     if request.method=="POST":
         yurl=request.form['yurl']
-        try:
-            global yt
-            yt=YouTube(str(yurl))
-        except:
-            return render_template('index.html',er=1)
+#        try:
+        global yt
+        yt=YouTube(str(yurl))
+ """       except:
+            return render_template('index.html',er=1)"""
         
         title=yt.title
         thumb=yt.thumbnail_url

@@ -60,4 +60,4 @@ jobs:
         with:
           app-name: 'youtube-dloader'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_9E97A07F620747B7AC25EF0349256F96 }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_2754B9DD54524E00A5139450475EE7DD }}

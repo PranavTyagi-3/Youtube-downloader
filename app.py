@@ -1,5 +1,5 @@
 from distutils.debug import DEBUG
-from flask import Flask, after_this_request,render_template,request,send_file
+from flask import Flask,render_template,request,send_file
 from pytube import YouTube
 import os
 
@@ -9,11 +9,11 @@ app=Flask(__name__)
 def index():
     if request.method=="POST":
         yurl=request.form['yurl']
-#        try:
-        global yt
-        yt=YouTube(str(yurl))
-#       except:
-#           return render_template('index.html',er=1)"""
+        try:
+            global yt
+            yt=YouTube(str(yurl))
+        except:
+            return render_template('index.html',er=1)
         
         title=yt.title
         thumb=yt.thumbnail_url

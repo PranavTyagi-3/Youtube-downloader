@@ -12,8 +12,8 @@ def index():
 #        try:
         global yt
         yt=YouTube(str(yurl))
- """    except:
-            return render_template('index.html',er=1)"""
+#       except:
+#           return render_template('index.html',er=1)"""
         
         title=yt.title
         thumb=yt.thumbnail_url

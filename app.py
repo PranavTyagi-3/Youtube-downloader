@@ -12,7 +12,7 @@ def index():
 #        try:
         global yt
         yt=YouTube(str(yurl))
- """       except:
+ """    except:
             return render_template('index.html',er=1)"""
         
         title=yt.title
